@@ -17,9 +17,5 @@ public class SubtractorTest {
         assertThat(subtractor.subtract(2,2), is(0));
     }
 
-    @Test
-    public void subtract_should_return_difference_given_two_doubles(){
-        assertThat(subtractor.subtract(2.0,2.0), is(0.0));
-    }
 
 }
