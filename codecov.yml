@@ -4,7 +4,7 @@ coverage:
       default:
         # basic
         target: 80% # coverage we are trying to achieve
-        threshold: 2% # coverage difference allowed to succeed
+        threshold: 12% # coverage difference allowed to succeed
         base: auto
 
 coverage:
