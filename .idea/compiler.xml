@@ -7,6 +7,7 @@
     <bytecodeTargetLevel>
       <module name="codecovdemo_main" target="1.8" />
       <module name="codecovdemo_test" target="1.8" />
+      <module name="codecovdemo_testIntegration" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

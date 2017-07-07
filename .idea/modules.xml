@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codecovdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/codecovdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codecovdemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/codecovdemo_main.iml" group="codecovdemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codecovdemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/codecovdemo_test.iml" group="codecovdemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codecovdemo_testIntegration.iml" filepath="$PROJECT_DIR$/.idea/modules/codecovdemo_testIntegration.iml" group="codecovdemo" />
     </modules>
   </component>
 </project>
