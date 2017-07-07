@@ -10,9 +10,11 @@ import static org.junit.Assert.*;
  */
 public class SubtractorTest {
 
+    Subtractor subtractor = new Subtractor();
+
     @Test
     public void subtract_should_return_difference_given_two_integers(){
-        assertThat(Subtractor.subtract(2,2), is(0));
+        assertThat(subtractor.subtract(2,2), is(0));
     }
 
 }
