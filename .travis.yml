@@ -11,6 +11,6 @@ script:
   - ./gradlew jacocoTestReport
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -F test
-  - bash <(curl -s https://codecov.io/bash) -F test-integration
+  - bash <(curl -s https://codecov.io/bash) -F unittests -f /Users/gabe.clark/Practice/codecovdemo/src/test
+  - bash <(curl -s https://codecov.io/bash) -F integrationTests -f /Users/gabe.clark/Practice/codecovdemo/src/test-integration
 
