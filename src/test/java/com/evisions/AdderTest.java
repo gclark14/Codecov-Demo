@@ -16,4 +16,5 @@ public class AdderTest {
     public void add_should_return_sum_given_two_integers(){
         assertThat(adder.add(2,2), is(4));
     }
+
 }
