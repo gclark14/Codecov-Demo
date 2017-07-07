@@ -5,7 +5,6 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../src/test-integration">
       <sourceFolder url="file://$MODULE_DIR$/../../src/test-integration/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../src/test-integration/resources" type="java-resource" />
     </content>
     <content url="file://$MODULE_DIR$/../../src/testIntegration">
       <sourceFolder url="file://$MODULE_DIR$/../../src/testIntegration/java" isTestSource="false" />
