@@ -10,8 +10,10 @@ import static org.junit.Assert.*;
  */
 public class AdderTest {
 
+    Adder adder = new Adder();
+
     @Test
     public void add_should_return_sum_given_two_integers(){
-        assertThat(Adder.add(2,2), is(4));
+        assertThat(adder.add(2,2), is(4));
     }
 }
