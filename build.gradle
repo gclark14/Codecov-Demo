@@ -60,8 +60,12 @@ task testIntegration(type: Test) {
 testIntegration.mustRunAfter test
 
 jacocoTestReport {
+
+	executionData test, testIntegration
+
 	reports {
 		xml.enabled true
 		html.enabled false
 	}
+
 }
