@@ -51,6 +51,9 @@ configurations {
 }
 
 task testIntegration(type: Test) {
+	jacoco{
+		destinationFile = file("build/reports/integrationTest.xml")
+	}
 	testClassesDir = sourceSets.testIntegration.output.classesDir
 	classpath = sourceSets.testIntegration.runtimeClasspath
 	outputs.upToDateWhen { false }
