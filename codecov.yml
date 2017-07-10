@@ -7,6 +7,7 @@ coverage:
         threshold: 2% # coverage difference allowed to succeed
         base: auto
 
+
 coverage:
   status:
     patch:
@@ -19,8 +20,10 @@ coverage:
 flags:
   unittests:
     paths:
+      -src/main
       - src/test
 
   integrationTests:
     paths:
+      -src/main
       - src/test-integration
