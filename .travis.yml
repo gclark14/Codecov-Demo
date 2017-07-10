@@ -11,6 +11,8 @@ script:
   - ./gradlew jacocoTestReport
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -F unittests
-  - bash <(curl -s https://codecov.io/bash) -F integrationTests
+  gradle clean test jacocoTestReport
+  - bash <(curl -s https://codecov.io/bash) -F unittests -f $home/Practice/codecovdemo/build/reports/jacoco/test/jacocoTestReport.xml
+  gradle testIntegration jacocoTestReport
+  - bash <(curl -s https://codecov.io/bash) -F integrationTests -f $home/Practice/codecovdemo/build/reports/jacoco/test/jacocoTestReport.xml
 
