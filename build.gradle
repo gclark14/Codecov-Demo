@@ -86,7 +86,7 @@ task integrationCoverageReport(type: JacocoReport) {
 
 	subprojects.each {
 		sourceSets sourceSets.main
-		sourceSets sourceSets.test
+		//sourceSets sourceSets.test
 		sourceSets sourceSets.testIntegration
 	}
 

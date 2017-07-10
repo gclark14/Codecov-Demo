@@ -8,8 +8,6 @@ before_script:
 
 script:
   - ./gradlew check
-  #- ./gradlew clean test jacocoTestReport
-  #- ./gradlew testIntegration jacocoTestReport
 
 after_success:
   - ./gradlew clean test unitCoverageReport
