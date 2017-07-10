@@ -66,7 +66,7 @@ task unitCoverageReport(type: JacocoReport) {
 	classDirectories = files(sourceSets.main.output)
 
     subprojects.each {
-		sourceSets sourceSets.main
+		//sourceSets sourceSets.main
 		sourceSets sourceSets.test
 		//sourceSets sourceSets.testIntegration
 	}
@@ -85,7 +85,7 @@ task integrationCoverageReport(type: JacocoReport) {
 	classDirectories = files(sourceSets.main.output)
 
 	subprojects.each {
-		sourceSets sourceSets.main
+		//sourceSets sourceSets.main
 		//sourceSets sourceSets.test
 		sourceSets sourceSets.testIntegration
 	}
