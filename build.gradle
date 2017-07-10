@@ -61,7 +61,7 @@ testIntegration.mustRunAfter test
 
 jacocoTestReport {
 
-	//executionData test, testIntegration
+	executionData test, testIntegration
 
 	reports {
 		xml.enabled true

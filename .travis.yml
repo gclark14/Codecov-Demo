@@ -8,11 +8,10 @@ before_script:
 
 script:
   - ./gradlew check
-  # - ./gradlew jacocoTestReport
+  - ./gradlew clean test testIntegration jacocoTestReport
 
 after_success:
-  ./gradlew clean test jacocoTestReport
   - bash <(curl -s https://codecov.io/bash) -F unittests -f build/reports/jacoco/test/jacocoTestReport.xml
-  ./gradlew testIntegration jacocoTestReport
+  #./gradlew testIntegration jacocoTestReport
   - bash <(curl -s https://codecov.io/bash) -F integrationTests -f build/reports/jacoco/test/jacocoTestReport.xml
 
