@@ -13,7 +13,7 @@ script:
 
 after_success:
   - ./gradlew clean test unitCoverageReport
-  - bash <(curl -s https://codecov.io/bash) -F unittests -f build/reports/jacoco/unitCoverageReport/unitCoverageReport.xml
+  - bash <(curl -s https://codecov.io/bash) -c -F unittests -f build/reports/jacoco/unitCoverageReport/unitCoverageReport.xml
   - ./gradlew testIntegration integrationCoverageReport
-  - bash <(curl -s https://codecov.io/bash) -F integrationTests -f build/reports/jacoco/integrationCoverageReport/integrationCoverageReport.xml
+  - bash <(curl -s https://codecov.io/bash) -c -F integrationTests -f build/reports/jacoco/integrationCoverageReport/integrationCoverageReport.xml
 

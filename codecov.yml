@@ -15,3 +15,4 @@ coverage:
         target: 80% # says this PR must be x% covered
         threshold: 2%
         base: auto
+
