@@ -51,9 +51,6 @@ configurations {
 }
 
 task testIntegration(type: Test) {
-	jacoco{
-		destinationFile = file("build/reports/integrationTest.xml")
-	}
 	testClassesDir = sourceSets.testIntegration.output.classesDir
 	classpath = sourceSets.testIntegration.runtimeClasspath
 	outputs.upToDateWhen { false }
@@ -62,10 +59,46 @@ task testIntegration(type: Test) {
 // if building the project, run integration tests if and only if all unit tests pass first
 testIntegration.mustRunAfter test
 
+task unitCoverageReport(type: JacocoReport) {
+	executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/test.exec")
+
+	sourceDirectories = files(sourceSets.main.allSource.srcDirs)
+	classDirectories = files(sourceSets.main.output)
+
+    subprojects.each {
+		sourceSets sourceSets.main
+		sourceSets sourceSets.test
+		//sourceSets sourceSets.testIntegration
+	}
+
+	reports {
+		xml.enabled true
+		html.enabled false
+	}
+
+}
+
+task integrationCoverageReport(type: JacocoReport) {
+	executionData fileTree(project.rootDir.absolutePath).include("**/build/testIntegration.exec")
+
+	sourceDirectories = files(sourceSets.main.allSource.srcDirs)
+	classDirectories = files(sourceSets.main.output)
+
+	subprojects.each {
+		sourceSets sourceSets.main
+		sourceSets sourceSets.test
+		sourceSets sourceSets.testIntegration
+	}
+
+	reports {
+		xml.enabled true
+		html.enabled false
+	}
+
+}
+
 jacocoTestReport {
-
 	//executionData test, testIntegration
-
 	reports {
 		xml.enabled true
 		html.enabled false
