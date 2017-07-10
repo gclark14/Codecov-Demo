@@ -14,6 +14,5 @@ coverage:
       default:
         # basic
         target: 80% # says this PR must be x% covered
-        threshold: 2%
+        threshold: null
         base: auto
-

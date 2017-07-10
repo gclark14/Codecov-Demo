@@ -60,7 +60,7 @@ task testIntegration(type: Test) {
 testIntegration.mustRunAfter test
 
 task unitCoverageReport(type: JacocoReport) {
-	executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/test.exec")
+	executionData test //fileTree(project.rootDir.absolutePath).include("**/build/jacoco/test.exec")
 
 	sourceDirectories = files(sourceSets.main.allSource.srcDirs)
 	classDirectories = files(sourceSets.main.output)
@@ -79,7 +79,7 @@ task unitCoverageReport(type: JacocoReport) {
 }
 
 task integrationCoverageReport(type: JacocoReport) {
-	executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/testIntegration.exec")
+	executionData testIntegration //fileTree(project.rootDir.absolutePath).include("**/build/jacoco/testIntegration.exec")
 
 	sourceDirectories = files(sourceSets.main.allSource.srcDirs)
 	classDirectories = files(sourceSets.main.output)
