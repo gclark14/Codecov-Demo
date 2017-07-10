@@ -16,3 +16,11 @@ coverage:
         threshold: 2%
         base: auto
 
+flags:
+  unittests:
+    paths:
+      - src/test
+
+  integrationTests:
+    paths:
+      - src/test-integration
