@@ -12,6 +12,7 @@ public class SubtractorTest {
 
     Subtractor subtractor = new Subtractor();
 
+    // Noted off to demonstrate a lack of coverage in unit tests.
     @Test
     public void subtract_should_return_difference_given_two_integers(){
         //assertThat(subtractor.subtract(2,2), is(0));

@@ -1,3 +1,5 @@
+# The codecov yaml contains all configuration settings.
+# Project refers to *production*
 coverage:
   status:
     project:
@@ -7,7 +9,7 @@ coverage:
         threshold: 2% # coverage difference allowed to succeed
         base: auto
 
-
+# Patch refers to changes being made within *this* PR
 coverage:
   status:
     patch:
