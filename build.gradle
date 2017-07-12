@@ -65,8 +65,8 @@ task unitCoverageReport(type: JacocoReport) {
 	classDirectories = files(sourceSets.main.output)
 
 	reports {
-		xml.enabled false
-		html.enabled true
+		xml.enabled true
+		html.enabled false
 	}
 
 }
@@ -79,8 +79,8 @@ task integrationCoverageReport(type: JacocoReport) {
 	classDirectories = files(sourceSets.main.output)
 
 	reports {
-		xml.enabled false
-		html.enabled true
+		xml.enabled true
+		html.enabled false
 	}
 
 }
