@@ -8,7 +8,6 @@ before_script:
 
 script:
   - ./gradlew check
-<<<<<<< HEAD
 
 # The bash uploader relays our reports to codecov.
 # Here we are generating reports to be interpreted for both
