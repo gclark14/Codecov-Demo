@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # The codecov yaml contains all configuration settings.
 # Project refers to *production*
+=======
+>>>>>>> a274320f25928597f7218c8e09cfb91316b9054a
 coverage:
   status:
     project:
@@ -9,12 +12,19 @@ coverage:
         threshold: 2% # coverage difference allowed to succeed
         base: auto
 
+<<<<<<< HEAD
 # Patch refers to changes being made within *this* PR
+=======
+>>>>>>> a274320f25928597f7218c8e09cfb91316b9054a
 coverage:
   status:
     patch:
       default:
         # basic
         target: 80% # says this PR must be x% covered
+<<<<<<< HEAD
         threshold: null
+=======
+        threshold: 2%
+>>>>>>> a274320f25928597f7218c8e09cfb91316b9054a
         base: auto
